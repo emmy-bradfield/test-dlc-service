@@ -19,7 +19,9 @@ ROUTER.route("/learners/new-learner").post((req, res) => {
     on_track: req.body.on_track,
     activities: req.body.activites
   }
+  console.log(learnerObj);
   const LEARNER = new Learner(learnerObj);
+  console.log(LEARNER);
   LEARNER.save().then(() => res.json(LEARNER)).catch((err) => res.json(`Error: ${err}`))
 });
 
