@@ -10,23 +10,23 @@ console.log("clicked");
     email: "test.user@test.com",
     course: "testing",
     RAG: "GREEN",
-    DLC: [{
+    DLC: {
       _id: 21303,
       name: "Emily Bradfield",
       email: "emmybradfield@hotmail.co.uk"
-    }],
-    employer: [{
+    },
+    employer: {
       _id: 2,
       company: "Test",
       contact_name: "Test",
       contact_email: "test.employer@test.org"
-    }],
+    },
     FS_exam: false,
     at_risk: false,
     gateway: false,
     learner_support: true,
     on_track: 12,
-    activities: [{
+    activities: {
       _id: "A1.1",
       href: "https://www.github.com",
       complete: false,
@@ -34,7 +34,7 @@ console.log("clicked");
       due: 2022-11-29,
       submissions: 0,
       portfolio: false
-    }]
+    }
   }
   await axios.post("/learners/new-learner", sendUpdate).then(res => console.log(res)).catch((err) => console.log(err));
 };
