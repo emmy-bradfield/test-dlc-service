@@ -4,7 +4,8 @@ const sendUpdate = async() => {
 console.log("clicked");
   let updateTest = {
     _id: 21056,
-    name: "Test User",
+    forename: "Test",
+    surname: "User",
     email: "test.user@test.com",
     course: "testing",
     RAG: "GREEN",
