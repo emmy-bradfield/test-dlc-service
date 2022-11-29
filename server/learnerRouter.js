@@ -17,7 +17,7 @@ ROUTER.route("/learners/new-learner").post((req, res) => {
     gateway: req.body.gateway,
     learner_support: req.body.learner_support,
     on_track: req.body.on_track,
-    activities: req.body.activites
+    activities: req.body.activities
   }
   console.log(learnerObj);
   const LEARNER = new Learner(learnerObj);
