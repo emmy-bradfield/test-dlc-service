@@ -33,8 +33,9 @@ console.log("clicked");
       submissions: 0,
       portfolio: false
     }
-  }
-  await axios.post("/learners/new-learner", sendUpdate).then(res => console.log(res)).catch((err) => console.log(err));
+  };
+  console.log(updateTest);
+  await axios.post("/learners/new-learner", updateTest).then(res => console.log(res)).catch((err) => console.log(err));
 };
 
 TESTBTN.addEventListener("click", sendUpdate);
