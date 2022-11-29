@@ -23,7 +23,7 @@ CONNECTION.once("open", function(){
   console.log(`Mongoose Connected to Database`)
 });
 
-APP.use(EXPRESS.static(PATH.resolve9__dirname, '../client"))));
+APP.use(EXPRESS.static(PATH.resolve9__dirname, "../client"))));
 APP.get("*", (req, res) => {
   res.sendFile(PATH.resolve(__dirname, "../client", "index.html"))
 });
