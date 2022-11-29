@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 const MONGO_URL = "mongodb+srv://guest:guest_user@testdb.jqzxtxq.mongodb.net/?retryWrites=true&w=majority"
 const PATH = require("path");
 const MONGOOSE = require("mongoose");
-const LEARNER_ROUTER = require("./learnerRouter.js");
+const LEARNER_ROUTES = require("./learnerRouter.js");
 const ROUTER = EXPRESS.Router();
 
 APP.use(EXPRESS.json());
