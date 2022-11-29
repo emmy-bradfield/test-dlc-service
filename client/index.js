@@ -1,4 +1,3 @@
-const AXIOS = require("axios");
 const TESTBTN = document.querySelector("#test");
 
 const sendUpdate = async() => {
@@ -35,7 +34,7 @@ console.log("clicked");
       portfolio: false
     }
   }
-  await AXIOS.post("/learners/new-learner", sendUpdate).then(res => console.log(res)).catch((err) => console.log(err));
+  await axios.post("/learners/new-learner", sendUpdate).then(res => console.log(res)).catch((err) => console.log(err));
 };
 
 TESTBTN.addEventListener("click", sendUpdate);
