@@ -45,7 +45,7 @@ ROUTER.route("/learner/:_id/update").post((req, res) => {
 });
 
 // delete a learner
-ROUTER.route("/learner/:_id/delete).delete((req, res) => {
+ROUTER.route("/learner/:_id/delete").delete((req, res) => {
   Learner.findByIdAndDelete(res.params._id).then(() => res.json(true)).catch((err) => res.json(`Error: ${err}`));
 });
 
