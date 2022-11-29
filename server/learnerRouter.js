@@ -35,7 +35,7 @@ ROUTER.route("/learners/:_id").get((req, res) => {
 
 // find a learner by name
 ROUTER.route("/learners/search/:name").get((req, res) => {
-  Learner.findOne({"name": req.params.name}).then((learner) => res.json(learner)).catch((err) => res.json{`Error: ${err}`));
+  Learner.findOne({"name": req.params.name}).then((learner) => res.json(learner)).catch((err) => res.json(`Error: ${err}`));
 });
 
 // update a learner
